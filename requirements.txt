@@ -1,0 +1,4 @@
+cvzone
+mediapipe
+tensorflow
+numpy
