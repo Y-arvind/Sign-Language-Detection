@@ -43,7 +43,7 @@ while True :
             hGap = math.ceil((300-hCal)/2)
             imgWhite[hGap:hGap+hCal,:]=imgResize
             prediction, index = classifier.getPrediction(imgWhite, draw=False)
-        cv2.rectangle(imgOut, (x-offset, y-offset-50), (x - offset +90, y-offset+100),(255,0,255),cv2.FILLED)
+        cv2.rectangle(imgOut, (x-offset, y-offset-50), (x - offset +90, y-offset+50),(255,0,255),cv2.FILLED)
         cv2.putText(imgOut, labels[index], (x, y - 26), cv2.FONT_HERSHEY_COMPLEX, 1.7, (255, 255, 255), 2)
         cv2.rectangle(imgOut, (x - offset, y - offset),(x + w + offset, y + h + offset), (255, 0, 255), 4)
 
