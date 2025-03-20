@@ -1,8 +1,15 @@
-FROM continuumio/miniconda3
+FROM python:3.10
 
 WORKDIR /app
-COPY environment.yml /app/environment.yml
+COPY requirements.txt /app/
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxrender1 \
+    libxext6 \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip install -r requirements.txt
 COPY . /app
-RUN conda env create -f environment.yml && conda clean --all -y
-SHELL ["conda","run","-n","hand", "/bin/bash","-c"]
-CMD ["conda","run","-n","hand","python","app.py"]
+
+CMD ["python","app.py"]

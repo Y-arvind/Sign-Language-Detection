@@ -1,0 +1,10 @@
+cvzone==1.6.1
+tensorflow==2.10.0c
+tensorflow-io-gcs-filesystem==0.31.0
+mediapipe==0.10.5
+opencv-contrib-python==4.11.0.86
+opencv-python==4.11.0.86
+protobuf
+scipy==1.15.2
+
+numpy==1.26.4
