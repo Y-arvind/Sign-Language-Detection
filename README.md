@@ -19,3 +19,6 @@ Run the image by giving webcam access to the container:\
 This will start real-time hand gesture classification.
 
 ## Sample Classification
+![Classification Result](https://github.com/Y-arvind/Sign-Language-Detection/blob/main/A.png)
+![Classification Result](https://github.com/Y-arvind/Sign-Language-Detection/blob/main/B.png)
+![Classification Result](https://github.com/Y-arvind/Sign-Language-Detection/blob/main/C.png)
